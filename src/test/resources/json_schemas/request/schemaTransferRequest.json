@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "avatarImageId": {
+      "type": "integer",
+      "nullable": true
+    }
+  },
+  "required": [
+    "name",
+    "avatarImageId"
+  ],
+  "additionalProperties": false
+}

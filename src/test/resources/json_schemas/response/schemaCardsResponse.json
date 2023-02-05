@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "createdAt": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "updatedAt": {
+      "format": "date-time",
+      "type": "string",
+      "nullable": true
+    },
+    "deletedAt": {
+      "format": "date-time",
+      "type": "string",
+      "nullable": true
+    },
+    "fullName": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string",
+      "enum": [
+        "Root",
+        "General",
+        "Content",
+        "Financial"
+      ]
+    },
+    "isLocked": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "id",
+    "createdAt",
+    "updatedAt",
+    "deletedAt",
+    "fullName",
+    "email",
+    "role",
+    "isLocked"
+  ],
+  "additionalProperties": false
+}

@@ -1,12 +1,12 @@
-package ru.netology.common;
+package ru.netology.api.common;
 
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.jetbrains.annotations.NotNull;
-import ru.netology.dto.CardsResponseItem;
-import ru.netology.requests.Cards;
+import ru.netology.api.response.dto.CardsResponseItem;
+import ru.netology.api.requests.Cards;
 
 import java.util.List;
 

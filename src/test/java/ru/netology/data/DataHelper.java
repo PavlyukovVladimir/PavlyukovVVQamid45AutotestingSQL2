@@ -1,5 +1,6 @@
 package ru.netology.data;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.github.javafaker.Faker;
 import com.ibm.icu.text.Transliterator;
 import io.github.cdimascio.dotenv.Dotenv;
@@ -14,8 +15,8 @@ import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 import static java.util.Map.entry;
-import static ru.netology.data.DB.createTables;
-import static ru.netology.data.DB.dropTables;
+import static ru.netology.data.DB.*;
+import static ru.netology.api.requests.Transfer.postTransfer;
 
 
 public class DataHelper {
@@ -145,6 +146,11 @@ public class DataHelper {
         public static class Info {
             String login;
             String password;
+
+            @JsonIgnore
+            public static String getSchema() {
+                return SchemaGetter.getRequestSchema("Auth");
+            }
         }
 
         public enum AuthStatuses {
@@ -222,8 +228,77 @@ public class DataHelper {
         private Verify() {
         }
 
+        @Value
+        public static class Info {
+            String login;
+            String code;
+
+            @JsonIgnore
+            public static String getSchema() {
+                return SchemaGetter.getRequestSchema("Verification");
+            }
+        }
+
         public static String getVerificationCode(@NotNull Auth.Info info) {
             return DB.getAuthCodeFromLogin(info.getLogin());
+        }
+    }
+
+    public static class Transfer {
+        private Transfer() {
+        }
+
+        @Value
+        public static class Info {
+            String from;
+            String to;
+            Double amount;
+
+            @JsonIgnore
+            public static String getSchema() {
+                return SchemaGetter.getRequestSchema("Transfer");
+            }
+        }
+
+        public static Info getTransferInfoById(String idFrom, String idTo, Double amount){
+            String numberFrom = null;
+            if(idFrom != null){
+                numberFrom = getCardNumberFromId(idFrom);
+            }
+            String numberTo = null;
+            if(idFrom != null){
+                numberTo = getCardNumberFromId(idTo);
+            }
+            return new Info(numberFrom, numberTo, amount);
+        }
+        static public void usesDBTransferIdToId(
+                @NotNull String accessToken,
+                @NotNull String card1Id,
+                @NotNull String card2Id,
+                Double amount) {
+            usesDBTransferNumberToNumber(accessToken, getCardNumberFromId(card1Id), getCardNumberFromId(card2Id), amount);
+        }
+
+        static public void usesDBTransferNumberToNumber(
+                @NotNull String accessToken,
+                @NotNull String card1Number,
+                @NotNull String card2Number,
+                Double amount) {
+            Info transferInfo = new Info(card1Number, card2Number, amount);
+            postTransfer(accessToken, transferInfo);
+        }
+
+        static public void resetBalance() {
+            List<String> cards = getCardIdListFromUserName("vasya");
+            cards.forEach(
+                            cardId -> {
+                updateBalanceForCardByCardId(cardId.toString(), 1000000);
+            }
+            );
+        }
+
+        static public void updateCardBalance(@NotNull String cardId, int amountInKopecks) {
+                updateBalanceForCardByCardId(cardId, amountInKopecks);
         }
     }
 

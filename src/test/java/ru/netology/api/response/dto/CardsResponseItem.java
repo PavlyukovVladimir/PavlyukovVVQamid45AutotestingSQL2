@@ -1,4 +1,4 @@
-package ru.netology.api.dto;
+package ru.netology.api.response.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;

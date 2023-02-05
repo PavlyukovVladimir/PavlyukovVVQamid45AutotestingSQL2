@@ -9,24 +9,24 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 class Card {
-    Object id;
-    Object user_id;
-    Object number;
-    Object balance_in_kopecks;
+    String id;
+    String user_id;
+    String number;
+    Integer balance_in_kopecks;
 
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public void setUser_id(Object user_id) {
+    public void setUser_id(String user_id) {
         this.user_id = user_id;
     }
 
-    public void setNumber(Object number) {
+    public void setNumber(String number) {
         this.number = number;
     }
 
-    public void setBalance_in_kopecks(Object balance_in_kopecks) {
+    public void setBalance_in_kopecks(Integer balance_in_kopecks) {
         this.balance_in_kopecks = balance_in_kopecks;
     }
 }

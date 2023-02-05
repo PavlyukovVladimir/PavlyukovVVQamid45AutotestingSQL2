@@ -4,6 +4,7 @@ import io.github.cdimascio.dotenv.Dotenv;
 import lombok.SneakyThrows;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
+import org.apache.commons.dbutils.handlers.BeanListHandler;
 import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.TimeoutException;
 
@@ -11,6 +12,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Date;
+import java.util.List;
+import java.util.stream.Collectors;
 
 
 class DB {
@@ -30,6 +33,17 @@ class DB {
             return runner.query(conn,
                     String.format("SELECT password FROM users WHERE login='%s'",
                             login),
+                    new ScalarHandler<>());
+        }
+    }
+
+    @SneakyThrows
+    public static String getCardNumberFromId(@NotNull String id) {
+        var runner = new QueryRunner();
+        try (var conn = getConnection()) {
+            return runner.query(conn,
+                    String.format("SELECT number FROM cards WHERE id='%s'",
+                            id),
                     new ScalarHandler<>());
         }
     }
@@ -73,6 +87,27 @@ class DB {
             runner.update(conn, dataSQL, user.getId(), user.getLogin(), hashStr, user.getStatus());
         }
         return user;
+    }
+
+    @SneakyThrows
+    public static void updateBalanceForCardByCardId(@NotNull String cardId, @NotNull int amountInKopecks) {
+        try (var conn = getConnection()) {
+            new QueryRunner().update(conn, "UPDATE cards\n" +
+                    String.format("SET balance_in_kopecks = %d\n", amountInKopecks) +
+                    String.format("WHERE id = '%s';", cardId));
+        }
+    }
+
+    @SneakyThrows
+    public static List<String> getCardIdListFromUserName(@NotNull String userName) {
+        try (var conn = getConnection()) {
+            return new QueryRunner().query(conn, "SELECT cards.id FROM users, cards\n" +
+                            String.format("WHERE users.login = '%s' AND users.id = cards.user_id;", userName),
+                    new BeanListHandler<>(Ids.class))
+                    .stream()
+                    .map(Ids::getId)
+                    .collect(Collectors.toList());
+        }
     }
 
     @SneakyThrows

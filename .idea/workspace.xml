@@ -4,7 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d6e0a7e-a638-448e-9779-9bfd6c337f90" name="Changes" comment="" />
+    <list default="true" id="8d6e0a7e-a638-448e-9779-9bfd6c337f90" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/ApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/ApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/api/common/AuthMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/api/common/AuthMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/api/common/CardsMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/api/common/CardsMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/api/common/TransferMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/api/common/TransferMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/api/requests/Auth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/api/requests/Auth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/api/requests/Cards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/api/requests/Cards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/api/requests/Transfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/api/requests/Transfer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/api/response/dto/AuthVerificationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/api/response/dto/AuthVerificationResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/api/response/dto/CardsResponseItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/api/response/dto/CardsResponseItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/data/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/data/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/data/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/data/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/data/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/data/DB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/data/DataHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/data/DataHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/data/Ids.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/data/Ids.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/data/SchemaGetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/data/SchemaGetter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/json_schemas/request/schemaAuthRequest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/json_schemas/request/schemaAuthRequest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/json_schemas/request/schemaAuthVerificationRequest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/json_schemas/request/schemaAuthVerificationRequest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/json_schemas/request/schemaTransferRequest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/json_schemas/request/schemaTransferRequest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/json_schemas/response/schemaAuthVerificationResponse.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/json_schemas/response/schemaAuthVerificationResponse.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/json_schemas/response/schemaCardsResponse.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/json_schemas/response/schemaCardsResponse.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,8 +42,49 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PavlyukovVVQamid45AutotestingSQL2" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PavlyukovVVQamid45AutotestingSQL2" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PavlyukovVVQamid45AutotestingSQL2" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2LK5F5IxUQJxXkE4K82xtc951uo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -27,9 +95,160 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_directory_selection": "/home/vladimir/IdeaProjects/PavlyukovVVQamid45AutotestingSQL2/src/test/java/ru/netology/api",
+    "last_opened_file_path": "/home/vladimir/IdeaProjects/PavlyukovVVQamid45AutotestingSQL2/src/test/resources",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$/src/test" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/json_schemas/response" />
+      <recent name="$PROJECT_DIR$/src/test/resources/json_schemas" />
+      <recent name="$PROJECT_DIR$/src/test/java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.netology.api.common" />
+      <recent name="ru.netology.dto" />
+      <recent name="ru.netology.common" />
+      <recent name="ru.netology.data" />
+      <recent name="ru.netology.requests" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.ApiTest">
+    <configuration name="ApiTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.netology.ApiTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ApiTest.fromFirstToSecond0Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.netology.ApiTest.fromFirstToSecond0Test&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ApiTest.fromFirstToSecond0_01Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.netology.ApiTest.fromFirstToSecond0_01Test&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ApiTest.fromFirstToSecondNegativeAmountTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.netology.ApiTest.fromFirstToSecondNegativeAmountTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ApiTest.fromFirstToUnknownSecondIntTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.netology.ApiTest.fromFirstToUnknownSecondIntTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.ApiTest" />
+        <item itemvalue="Gradle.ApiTest.fromFirstToUnknownSecondIntTest" />
+        <item itemvalue="Gradle.ApiTest.fromFirstToSecond0Test" />
+        <item itemvalue="Gradle.ApiTest.fromFirstToSecond0_01Test" />
+        <item itemvalue="Gradle.ApiTest.fromFirstToSecondNegativeAmountTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

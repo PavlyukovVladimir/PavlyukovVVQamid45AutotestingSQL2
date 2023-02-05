@@ -2,17 +2,20 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
-    "name": {
+    "from": {
       "type": "string"
     },
-    "avatarImageId": {
-      "type": "integer",
-      "nullable": true
+    "to": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "number"
     }
   },
   "required": [
-    "name",
-    "avatarImageId"
+    "from",
+    "to",
+    "amount"
   ],
   "additionalProperties": false
 }

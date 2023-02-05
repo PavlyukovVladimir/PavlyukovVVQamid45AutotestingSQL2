@@ -1,4 +1,4 @@
-package ru.netology.common;
+package ru.netology.api.common;
 
 
 import io.restassured.http.ContentType;
@@ -6,8 +6,8 @@ import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.jetbrains.annotations.NotNull;
 import ru.netology.data.DataHelper;
-import ru.netology.dto.AuthVerificationResponse;
-import ru.netology.requests.Auth;
+import ru.netology.api.response.dto.AuthVerificationResponse;
+import ru.netology.api.requests.Auth;
 
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
 

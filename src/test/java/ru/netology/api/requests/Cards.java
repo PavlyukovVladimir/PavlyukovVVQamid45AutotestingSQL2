@@ -1,9 +1,9 @@
-package ru.netology.requests;
+package ru.netology.api.requests;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import lombok.Value;
-import ru.netology.Constants;
+import ru.netology.data.Constants;
 
 @Value
 public class Cards {

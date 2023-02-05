@@ -2,25 +2,16 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
-    "cpf": {
-      "type": "string",
-      "nullable": true
-    },
-    "bankId": {
-      "type": "integer"
-    },
-    "agency": {
+    "login": {
       "type": "string"
     },
-    "accountNumber": {
+    "code": {
       "type": "string"
     }
   },
   "required": [
-    "cpf",
-    "bankId",
-    "agency",
-    "accountNumber"
+    "login",
+    "code"
   ],
   "additionalProperties": false
 }

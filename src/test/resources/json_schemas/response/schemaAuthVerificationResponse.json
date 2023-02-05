@@ -2,50 +2,12 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
-    "id": {
-      "type": "integer",
-      "nullable": true
-    },
-    "zip": {
-      "type": "string",
-      "nullable": true
-    },
-    "countryId": {
-      "type": "integer"
-    },
-    "stateId": {
-      "type": "integer"
-    },
-    "city": {
+    "token": {
       "type": "string"
-    },
-    "district": {
-      "type": "string",
-      "nullable": true
-    },
-    "street": {
-      "type": "string",
-      "nullable": true
-    },
-    "house": {
-      "type": "string",
-      "nullable": true
-    },
-    "apartment": {
-      "type": "string",
-      "nullable": true
     }
   },
   "required": [
-    "id",
-    "zip",
-    "countryId",
-    "stateId",
-    "city",
-    "district",
-    "street",
-    "house",
-    "apartment"
+    "token"
   ],
   "additionalProperties": false
 }

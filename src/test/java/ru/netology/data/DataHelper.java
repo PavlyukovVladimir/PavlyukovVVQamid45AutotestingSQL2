@@ -110,10 +110,6 @@ public class DataHelper {
 
         @SneakyThrows
         private static Process execJar(@NotNull String pathToJarFile, String... params) {
-//            String javaHome = System.getProperty("java.home");
-//            String javaBinStr = javaHome +
-//                    File.separator + "bin" +
-//                    File.separator + "java";
             List<String> commands = new ArrayList<>();
             commands.add("java");
             commands.add("-jar");
@@ -260,45 +256,27 @@ public class DataHelper {
             }
         }
 
-        public static Info getTransferInfoById(String idFrom, String idTo, Double amount){
+        public static Info getTransferInfoById(String idFrom, String idTo, Double amount) {
             String numberFrom = null;
-            if(idFrom != null){
+            if (idFrom != null) {
                 numberFrom = getCardNumberFromId(idFrom);
             }
             String numberTo = null;
-            if(idFrom != null){
+            if (idFrom != null) {
                 numberTo = getCardNumberFromId(idTo);
             }
             return new Info(numberFrom, numberTo, amount);
-        }
-        static public void usesDBTransferIdToId(
-                @NotNull String accessToken,
-                @NotNull String card1Id,
-                @NotNull String card2Id,
-                Double amount) {
-            usesDBTransferNumberToNumber(accessToken, getCardNumberFromId(card1Id), getCardNumberFromId(card2Id), amount);
-        }
-
-        static public void usesDBTransferNumberToNumber(
-                @NotNull String accessToken,
-                @NotNull String card1Number,
-                @NotNull String card2Number,
-                Double amount) {
-            Info transferInfo = new Info(card1Number, card2Number, amount);
-            postTransfer(accessToken, transferInfo);
         }
 
         static public void resetBalance() {
             List<String> cards = getCardIdListFromUserName("vasya");
             cards.forEach(
-                            cardId -> {
-                updateBalanceForCardByCardId(cardId.toString(), 1000000);
-            }
+                    cardId -> updateBalanceForCardByCardId(cardId, 1000000)
             );
         }
 
         static public void updateCardBalance(@NotNull String cardId, int amountInKopecks) {
-                updateBalanceForCardByCardId(cardId, amountInKopecks);
+            updateBalanceForCardByCardId(cardId, amountInKopecks);
         }
     }
 

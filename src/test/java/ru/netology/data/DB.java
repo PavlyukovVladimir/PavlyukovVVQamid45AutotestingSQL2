@@ -90,7 +90,7 @@ class DB {
     }
 
     @SneakyThrows
-    public static void updateBalanceForCardByCardId(@NotNull String cardId, @NotNull int amountInKopecks) {
+    public static void updateBalanceForCardByCardId(@NotNull String cardId, int amountInKopecks) {
         try (var conn = getConnection()) {
             new QueryRunner().update(conn, "UPDATE cards\n" +
                     String.format("SET balance_in_kopecks = %d\n", amountInKopecks) +
@@ -102,8 +102,8 @@ class DB {
     public static List<String> getCardIdListFromUserName(@NotNull String userName) {
         try (var conn = getConnection()) {
             return new QueryRunner().query(conn, "SELECT cards.id FROM users, cards\n" +
-                            String.format("WHERE users.login = '%s' AND users.id = cards.user_id;", userName),
-                    new BeanListHandler<>(Ids.class))
+                                    String.format("WHERE users.login = '%s' AND users.id = cards.user_id;", userName),
+                            new BeanListHandler<>(Ids.class))
                     .stream()
                     .map(Ids::getId)
                     .collect(Collectors.toList());

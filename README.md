@@ -187,7 +187,7 @@ sudo rm -R ./.data
 
 # Запуск тестов
 
-* Runs all tests: `./gradlew clean test --info`
+* Runs all tests: `./gradlew test --info`
 * Delete previous data about tests: `./gradlew clean`
 
 * [Просмотр отчета(локальное выполнение тестов)](build/reports/tests/test/index.html)

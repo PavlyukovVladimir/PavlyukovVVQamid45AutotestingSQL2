@@ -77,7 +77,7 @@ public class DataHelper {
             public static void start() {
                 if (process == null) {
                     process = execBashScriptFromFile("src/test/resources/startDBContainer.sh");
-                    TimeUnit.SECONDS.sleep(30);
+                    TimeUnit.SECONDS.sleep(15);
                 } else {
                     throw new RuntimeException("Forbidden start the container if it is already running.");
                 }

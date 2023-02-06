@@ -59,6 +59,7 @@ public class DataHelper {
                         "-P:jdbc.user=" + dotenv.get("DB_USER"),
                         "-P:jdbc.password=" + dotenv.get("DB_PASS")
                         , " & echo $! > ./testserver.pid"); // для ручной остановки
+                System.out.println("Стартанул вроде");
             }
 
             public void stop() {
@@ -77,7 +78,7 @@ public class DataHelper {
             public static void start() {
                 if (process == null) {
                     process = execBashScriptFromFile("src/test/resources/startDBContainer.sh");
-                    TimeUnit.SECONDS.sleep(15);
+                    TimeUnit.SECONDS.sleep(60);
                 } else {
                     throw new RuntimeException("Forbidden start the container if it is already running.");
                 }

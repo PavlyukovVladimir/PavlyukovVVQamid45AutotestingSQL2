@@ -59,7 +59,6 @@ public class DataHelper {
                         "-P:jdbc.user=" + dotenv.get("DB_USER"),
                         "-P:jdbc.password=" + dotenv.get("DB_PASS")
                         , " & echo $! > ./testserver.pid"); // для ручной остановки
-                System.out.println("Стартанул вроде");
             }
 
             public void stop() {

@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d6e0a7e-a638-448e-9779-9bfd6c337f90" name="Changes" comment="save work" />
+    <list default="true" id="8d6e0a7e-a638-448e-9779-9bfd6c337f90" name="Changes" comment="save work">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,7 +98,7 @@
       <recent name="ru.netology.requests" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ApiTest">
+  <component name="RunManager" selected="Gradle.PavlyukovVVQamid45AutotestingSQL2 [test]">
     <configuration name="ApiTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -247,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675643753430</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="save work">
+      <created>1675644855699</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675644855699</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
